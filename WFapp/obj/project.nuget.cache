@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "xYLVI9GFYIohylS6MRmKr9cI4d7U5JCCxmEbxTlYLAWLkEy15bErm8zCzfvDfgON3cfoGtgH37U+QWl/1oUkIA==",
+  "dgSpecHash": "VUgUIitu9S03jrPaLEp8r+0AT2gPR/XyFyGMP614wwFSI4LUrVB/Ihw7Nw6tvpXZdKbL2GrrzYJ94Ng8bq25RQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\WFapp\\WFapp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

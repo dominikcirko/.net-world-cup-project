@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "o7bvEWJLJMZvyfvULA1Ims6oN376CHz3tmgc4Cv8l/lt5rkEUKMN+VkdzMBvms/gg2EwVBF/V2sF8PY1vHV30w==",
+  "dgSpecHash": "KgbeN/f0w+JnfvITGVO5ENLet5LS+SVpK9OksOCdLh2Jr7L6c0kfYtmYw8ozLfUBlpzqAVpA3imOfUz4FwqHeg==",
   "success": true,
   "projectFilePath": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\DataLayer\\DataLayer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

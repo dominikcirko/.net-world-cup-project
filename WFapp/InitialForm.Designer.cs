@@ -37,6 +37,8 @@ namespace WFapp
             btnFemale = new Button();
             btnMale = new Button();
             labelErrMsg = new Label();
+            cbChampionship = new ComboBox();
+            lblNationalTeam = new Label();
             SuspendLayout();
             // 
             // lblGender
@@ -82,10 +84,24 @@ namespace WFapp
             resources.ApplyResources(labelErrMsg, "labelErrMsg");
             labelErrMsg.Name = "labelErrMsg";
             // 
+            // cbChampionship
+            // 
+            cbChampionship.FormattingEnabled = true;
+            resources.ApplyResources(cbChampionship, "cbChampionship");
+            cbChampionship.Name = "cbChampionship";
+            cbChampionship.SelectedIndexChanged += cbChampionship_SelectedIndexChanged;
+            // 
+            // lblNationalTeam
+            // 
+            resources.ApplyResources(lblNationalTeam, "lblNationalTeam");
+            lblNationalTeam.Name = "lblNationalTeam";
+            // 
             // InitialForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(lblNationalTeam);
+            Controls.Add(cbChampionship);
             Controls.Add(labelErrMsg);
             Controls.Add(btnMale);
             Controls.Add(btnFemale);
@@ -109,5 +125,7 @@ namespace WFapp
         private Button btnFemale;
         private Button btnMale;
         private Label labelErrMsg;
+        private ComboBox cbChampionship;
+        private Label lblNationalTeam;
     }
 }

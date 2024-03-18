@@ -1,2 +1,2 @@
-Gender: male
-Language: Croatian
+Championship: Spain (ESP)
+Championship: Iran (IRN)

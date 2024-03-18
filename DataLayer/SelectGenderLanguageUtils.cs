@@ -8,7 +8,7 @@
         public void SelectGenderLanguage()
         {
 
-            string relativePath = "gender-language.txt";
+            string relativePath = "info.txt";
             using (StreamWriter sw = new(relativePath))
             {
                 if (File.Exists(relativePath))
