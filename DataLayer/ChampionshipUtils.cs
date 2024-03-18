@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
-using static DataLayer.SelectGenderLanguageUtils;
+﻿using System.Text.Json;
+
 
 namespace DataLayer
 {
@@ -36,7 +31,7 @@ namespace DataLayer
         }
 
         public void SaveChampionshipToTxt(ComboBox comboBox) {
-            string relativePath = "gender-language.txt";
+            string relativePath = "info.txt";
 
             using (StreamWriter sw = new StreamWriter(relativePath, true))
             {
