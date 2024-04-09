@@ -4,5 +4,8 @@
     <Compile Update="InitialForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserControls\NationalTeamControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

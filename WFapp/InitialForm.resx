@@ -121,9 +121,13 @@
   <data name="lblGender.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblGender.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblGender.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 229</value>
+    <value>32, 159</value>
   </data>
   <data name="lblGender.Size" type="System.Drawing.Size, System.Drawing">
     <value>199, 20</value>
@@ -141,16 +145,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblGender.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>pnlInitialSettings</value>
   </data>
   <data name="&gt;&gt;lblGender.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="lblLanguage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lblLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 61</value>
+    <value>32, 20</value>
   </data>
   <data name="lblLanguage.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 20</value>
@@ -168,13 +175,16 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblLanguage.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>pnlInitialSettings</value>
   </data>
   <data name="&gt;&gt;lblLanguage.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
+  </data>
+  <data name="btnCroatian.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnCroatian.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 105</value>
+    <value>32, 56</value>
   </data>
   <data name="btnCroatian.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 83</value>
@@ -192,13 +202,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnCroatian.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>pnlInitialSettings</value>
   </data>
   <data name="&gt;&gt;btnCroatian.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
+  </data>
+  <data name="btnEnglish.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnEnglish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 105</value>
+    <value>336, 56</value>
   </data>
   <data name="btnEnglish.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 83</value>
@@ -216,13 +229,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnEnglish.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>pnlInitialSettings</value>
   </data>
   <data name="&gt;&gt;btnEnglish.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
+  </data>
+  <data name="btnFemale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnFemale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 280</value>
+    <value>336, 200</value>
   </data>
   <data name="btnFemale.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 83</value>
@@ -240,13 +256,16 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnFemale.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>pnlInitialSettings</value>
   </data>
   <data name="&gt;&gt;btnFemale.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
+  </data>
+  <data name="btnMale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnMale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 280</value>
+    <value>32, 200</value>
   </data>
   <data name="btnMale.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 83</value>
@@ -264,37 +283,19 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnMale.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>pnlInitialSettings</value>
   </data>
   <data name="&gt;&gt;btnMale.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelErrMsg.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelErrMsg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 393</value>
-  </data>
-  <data name="labelErrMsg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 20</value>
-  </data>
-  <data name="labelErrMsg.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;labelErrMsg.Name" xml:space="preserve">
-    <value>labelErrMsg</value>
+  <data name="cbChampionship.IntegralHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;labelErrMsg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelErrMsg.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelErrMsg.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="cbChampionship.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="cbChampionship.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 416</value>
+    <value>215, 306</value>
   </data>
   <data name="cbChampionship.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 28</value>
@@ -309,16 +310,19 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbChampionship.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>pnlInitialSettings</value>
   </data>
   <data name="&gt;&gt;cbChampionship.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="lblNationalTeam.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblNationalTeam.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lblNationalTeam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 416</value>
+    <value>32, 306</value>
   </data>
   <data name="lblNationalTeam.Size" type="System.Drawing.Size, System.Drawing">
     <value>177, 20</value>
@@ -336,9 +340,135 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblNationalTeam.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>pnlInitialSettings</value>
   </data>
   <data name="&gt;&gt;lblNationalTeam.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnExit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 375</value>
+  </data>
+  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 55</value>
+  </data>
+  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnExit.Text" xml:space="preserve">
+    <value>Izlaz</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
+    <value>pnlInitialSettings</value>
+  </data>
+  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 375</value>
+  </data>
+  <data name="btnNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 55</value>
+  </data>
+  <data name="btnNext.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnNext.Text" xml:space="preserve">
+    <value>Sljedeće</value>
+  </data>
+  <data name="&gt;&gt;btnNext.Name" xml:space="preserve">
+    <value>btnNext</value>
+  </data>
+  <data name="&gt;&gt;btnNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNext.Parent" xml:space="preserve">
+    <value>pnlInitialSettings</value>
+  </data>
+  <data name="&gt;&gt;btnNext.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblErrMsg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblErrMsg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 286</value>
+  </data>
+  <data name="lblErrMsg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 20</value>
+  </data>
+  <data name="lblErrMsg.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lblErrMsg.Name" xml:space="preserve">
+    <value>lblErrMsg</value>
+  </data>
+  <data name="&gt;&gt;lblErrMsg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblErrMsg.Parent" xml:space="preserve">
+    <value>pnlInitialSettings</value>
+  </data>
+  <data name="&gt;&gt;lblErrMsg.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnBack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 375</value>
+  </data>
+  <data name="btnBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 55</value>
+  </data>
+  <data name="btnBack.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnBack.Text" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="&gt;&gt;btnBack.Name" xml:space="preserve">
+    <value>btnBack</value>
+  </data>
+  <data name="&gt;&gt;btnBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBack.Parent" xml:space="preserve">
+    <value>pnlInitialSettings</value>
+  </data>
+  <data name="&gt;&gt;btnBack.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlInitialSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 0</value>
+  </data>
+  <data name="pnlInitialSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>646, 455</value>
+  </data>
+  <data name="pnlInitialSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;pnlInitialSettings.Name" xml:space="preserve">
+    <value>pnlInitialSettings</value>
+  </data>
+  <data name="&gt;&gt;pnlInitialSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlInitialSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlInitialSettings.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -348,10 +478,7 @@
     <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 589</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>InitialForm</value>
+    <value>643, 452</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>InitialForm</value>

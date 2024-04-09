@@ -1,2 +1,3 @@
-Gender: male
-Language: Croatian
+Prvenstvo: muško
+Jezik: Hrvatski
+Reprezentacija: Korea Republic (KOR)

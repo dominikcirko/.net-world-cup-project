@@ -117,17 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnBack.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
   <data name="btnCroatian.Text" xml:space="preserve">
     <value>Croatian</value>
   </data>
   <data name="btnEnglish.Text" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="btnExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="btnFemale.Text" xml:space="preserve">
     <value>Female</value>
   </data>
   <data name="btnMale.Text" xml:space="preserve">
     <value>Male</value>
+  </data>
+  <data name="btnNext.Text" xml:space="preserve">
+    <value>Next</value>
   </data>
   <data name="lblGender.Text" xml:space="preserve">
     <value>Choose a championship:</value>

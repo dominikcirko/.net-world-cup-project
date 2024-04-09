@@ -36,9 +36,14 @@ namespace WFapp
             btnEnglish = new Button();
             btnFemale = new Button();
             btnMale = new Button();
-            labelErrMsg = new Label();
             cbChampionship = new ComboBox();
             lblNationalTeam = new Label();
+            btnExit = new Button();
+            btnNext = new Button();
+            lblErrMsg = new Label();
+            pnlInitialSettings = new Panel();
+            btnBack = new Button();
+            pnlInitialSettings.SuspendLayout();
             SuspendLayout();
             // 
             // lblGender
@@ -79,13 +84,10 @@ namespace WFapp
             btnMale.UseVisualStyleBackColor = true;
             btnMale.Click += btnMale_Click;
             // 
-            // labelErrMsg
-            // 
-            resources.ApplyResources(labelErrMsg, "labelErrMsg");
-            labelErrMsg.Name = "labelErrMsg";
-            // 
             // cbChampionship
             // 
+            cbChampionship.DropDownHeight = 100;
+            cbChampionship.DropDownStyle = ComboBoxStyle.DropDownList;
             cbChampionship.FormattingEnabled = true;
             resources.ApplyResources(cbChampionship, "cbChampionship");
             cbChampionship.Name = "cbChampionship";
@@ -96,25 +98,61 @@ namespace WFapp
             resources.ApplyResources(lblNationalTeam, "lblNationalTeam");
             lblNationalTeam.Name = "lblNationalTeam";
             // 
+            // btnExit
+            // 
+            resources.ApplyResources(btnExit, "btnExit");
+            btnExit.Name = "btnExit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnCancel_Click;
+            // 
+            // btnNext
+            // 
+            resources.ApplyResources(btnNext, "btnNext");
+            btnNext.Name = "btnNext";
+            btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
+            // 
+            // lblErrMsg
+            // 
+            resources.ApplyResources(lblErrMsg, "lblErrMsg");
+            lblErrMsg.Name = "lblErrMsg";
+            // 
+            // pnlInitialSettings
+            // 
+            pnlInitialSettings.Controls.Add(btnBack);
+            pnlInitialSettings.Controls.Add(btnExit);
+            pnlInitialSettings.Controls.Add(lblErrMsg);
+            pnlInitialSettings.Controls.Add(btnFemale);
+            pnlInitialSettings.Controls.Add(cbChampionship);
+            pnlInitialSettings.Controls.Add(btnNext);
+            pnlInitialSettings.Controls.Add(btnMale);
+            pnlInitialSettings.Controls.Add(lblGender);
+            pnlInitialSettings.Controls.Add(lblNationalTeam);
+            pnlInitialSettings.Controls.Add(lblLanguage);
+            pnlInitialSettings.Controls.Add(btnCroatian);
+            pnlInitialSettings.Controls.Add(btnEnglish);
+            resources.ApplyResources(pnlInitialSettings, "pnlInitialSettings");
+            pnlInitialSettings.Name = "pnlInitialSettings";
+            pnlInitialSettings.Paint += pnlInitialSettings_Paint;
+            // 
+            // btnBack
+            // 
+            resources.ApplyResources(btnBack, "btnBack");
+            btnBack.Name = "btnBack";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // InitialForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(lblNationalTeam);
-            Controls.Add(cbChampionship);
-            Controls.Add(labelErrMsg);
-            Controls.Add(btnMale);
-            Controls.Add(btnFemale);
-            Controls.Add(btnEnglish);
-            Controls.Add(btnCroatian);
-            Controls.Add(lblLanguage);
-            Controls.Add(lblGender);
+            Controls.Add(pnlInitialSettings);
             Name = "InitialForm";
+            Load += InitialForm_Load;
+            pnlInitialSettings.ResumeLayout(false);
+            pnlInitialSettings.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
-
-
 
         #endregion
 
@@ -124,8 +162,12 @@ namespace WFapp
         private Button btnEnglish;
         private Button btnFemale;
         private Button btnMale;
-        private Label labelErrMsg;
         private ComboBox cbChampionship;
         private Label lblNationalTeam;
+        private Button btnExit;
+        private Button btnNext;
+        private Label lblErrMsg;
+        private Panel pnlInitialSettings;
+        private Button btnBack;
     }
 }

@@ -4,6 +4,7 @@ C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\WFapp.
 C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\WFapp.dll
 C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\WFapp.pdb
 C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\en\WFapp.resources.dll
+C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
 C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\System.Text.Encodings.Web.dll
 C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\System.Text.Json.dll
 C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
@@ -11,7 +12,9 @@ C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\DataLa
 C:\Users\domin\source\repos\dotNET-Project\WFapp\bin\Debug\net7.0-windows\DataLayer.pdb
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.csproj.AssemblyReference.cache
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.InitialForm.resources
+C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.UserControls.NationalTeamControl.resources
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.InitialForm.en.resources
+C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.UserControls.NationalTeamControl.en.resources
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.csproj.GenerateResource.cache
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.AssemblyInfoInputs.cache
@@ -25,3 +28,4 @@ C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\refint
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.pdb
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.genruntimeconfig.cache
 C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\ref\WFapp.dll
+C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.Properties.Resources.resources
