@@ -38,7 +38,7 @@ namespace DataLayer.Utils.Implementation
             }
             return "";
         }
-        public void FileWriter(ComboBox comboBox = null)
+        public void FileWriter(ComboBox comboBox = null, Label label = null)
         {
             string culture = CultureInfo.CurrentCulture.ToString();
 

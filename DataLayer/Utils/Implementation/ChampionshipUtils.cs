@@ -14,7 +14,7 @@ namespace DataLayer.Utils.Implementation
             _genderLanguageUtils = genderLanguageUtils;
         }
 
-        public void FileWriter(ComboBox comboBox)
+        public void FileWriter(ComboBox comboBox, Label label = null)
         {
             string relativePath = "info.txt";
             using (StreamWriter sw = new(relativePath, true))

@@ -13,13 +13,15 @@ namespace WFapp
     {
         private readonly SelectGenderLanguageUtils _genderLanguageUtils;
         private readonly ChampionshipUtils _championshipUtils;
-        public InitialForm(SelectGenderLanguageUtils genderLanguageUtils, ChampionshipUtils campionshipUtils)
+        private readonly NationalTeamUtils _nationalTeamUtils;
+        public InitialForm(SelectGenderLanguageUtils genderLanguageUtils, ChampionshipUtils campionshipUtils, NationalTeamUtils nationalTeamUtils)
         {
             InitializeComponent();
             _genderLanguageUtils = genderLanguageUtils;
             _championshipUtils = campionshipUtils;
             cbChampionship.MaxDropDownItems = 2;
             btnBack.Enabled = false;
+            _nationalTeamUtils = nationalTeamUtils;
         }
         public Panel GetPnlInitialSettings() { return pnlInitialSettings; }
         public ComboBox GetCbChampionship() { return cbChampionship; }
@@ -178,7 +180,7 @@ namespace WFapp
             switch (dialog)
             {
                 case DialogResult.OK:
-                    NationalTeamControl nationalTeamControl = new(this);
+                    NationalTeamControl nationalTeamControl = new(this, _nationalTeamUtils);
                     this.Controls.Add(nationalTeamControl);
                     nationalTeamControl.Dock = DockStyle.Fill;
                     nationalTeamControl.GetPnlFavoritePlayers().Visible = true;

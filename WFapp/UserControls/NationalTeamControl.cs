@@ -1,6 +1,7 @@
 ﻿using DataLayer;
 using DataLayer.Constants;
 using DataLayer.DTO;
+using DataLayer.Utils.Implementation;
 using System.Globalization;
 using System.Resources;
 using System.Windows.Forms;
@@ -10,6 +11,7 @@ namespace WFapp.UserControls
 {
     public partial class NationalTeamControl : UserControl
     {
+        private readonly NationalTeamUtils _ntl;
         public Starting_Eleven[] starting_eleven { get; set; }
         public Substitute[] substitute { get; set; }
 
@@ -17,10 +19,11 @@ namespace WFapp.UserControls
         JsonDeserializer jsonDeserializer = new(new HttpClient());
 
         public Panel GetPnlFavoritePlayers() { return pnlFavoritePlayers; }
-        public NationalTeamControl(InitialForm initialForm)
+        public NationalTeamControl(InitialForm initialForm, NationalTeamUtils ntl)
         {
             InitializeComponent();
             _initialForm = initialForm;
+            _ntl = ntl;
             CheckChampionship();
             lbAllPlayers.Size = new System.Drawing.Size(590, 142);
             lbAllPlayers.Location = new System.Drawing.Point(27, 31);
@@ -78,7 +81,6 @@ namespace WFapp.UserControls
         private async Task PopulatePlayersListBoxAsync(string requestUriPlayers)
         {
             Root[] rootData = null;
-            //staviti linkove u konstante
             try
             {
                 rootData = await jsonDeserializer.DeserializeFromAPI<Root>(requestUriPlayers);
@@ -117,10 +119,10 @@ namespace WFapp.UserControls
             DragDropEffects dde1 = DoDragDrop(s,
                 DragDropEffects.All);
 
-            if (dde1 == DragDropEffects.All)
-            {
-                lbAllPlayers.Items.RemoveAt(lbAllPlayers.IndexFromPoint(e.X, e.Y));
-            }
+            //if (dde1 == DragDropEffects.All)
+            //{
+            //    lbAllPlayers.Items.RemoveAt(lbAllPlayers.IndexFromPoint(e.X, e.Y));
+            //}
         }
 
         private void lbFavoritePlayers_DragOver(object sender, DragEventArgs e)
@@ -132,11 +134,10 @@ namespace WFapp.UserControls
         {
             if (e.Data.GetDataPresent(DataFormats.StringFormat))
             {
+                RestrictPlayerNumber();
                 string str = (string)e.Data.GetData(
                     DataFormats.StringFormat);
-                lbFavoritePlayers.Items.Add(str);
             }
-            RestrictPlayerNumber();
         }
 
         private void btnTransferMultiplePlayers_Click(object sender, EventArgs e)
@@ -148,11 +149,10 @@ namespace WFapp.UserControls
             }
             while (lbAllPlayers.SelectedItems.Count > 0)
             {
-
+                
                 lbFavoritePlayers.Items.Add(lbAllPlayers.SelectedItems[0]);
                 lbAllPlayers.Items.Remove(lbAllPlayers.SelectedItems[0]);
             }
-
             RestrictPlayerNumber();
 
         }    
@@ -163,44 +163,49 @@ namespace WFapp.UserControls
             MessageBoxTranslateHelper("Please select a player", "Izaberite igrača");
 
             else
-            {
+            {               
                 lbFavoritePlayers.Items.Add(lbAllPlayers.SelectedItem);
                 lbAllPlayers.Items.Remove(lbAllPlayers.SelectedItem);
             }
             RestrictPlayerNumber();
+            //_ntl.FileWriter(lbFavoritePlayers);
         }
         private void RestrictPlayerNumber()
         {
-            for (int i = 0; i < lbFavoritePlayers.Items.Count; i++)
+            if (lbAllPlayers.SelectedItems.Count > 0)
             {
-                while (lbFavoritePlayers.Items.Count <= 3 && lbAllPlayers.SelectedItems.Count > 0)
+                lbFavoritePlayers.Items.Add(lbAllPlayers.SelectedItems[0]);
+                lbAllPlayers.Items.Remove(lbAllPlayers.SelectedItems[0]);
+            }
+                if (lbFavoritePlayers.Items.Count == 3)
                 {
-                    lbFavoritePlayers.Items.Add(lbAllPlayers.SelectedItems[0]);
-                    lbAllPlayers.Items.Remove(lbAllPlayers.SelectedItems[0]);
-                }
-                if (lbFavoritePlayers.Items.Count > 3)
+                    _ntl.FileWriter(lbFavoritePlayers);
+                    return;
+                }               
+
+            if (lbFavoritePlayers.Items.Count > 3)
+            {
+                while (lbFavoritePlayers.Items.Count != 3)
                 {
-                    for (int j = 3; j < lbFavoritePlayers.Items.Count; j++)
-                    {
-                        lbFavoritePlayers.Items.RemoveAt(j);
-                        lbAllPlayers.Items.Add(lbAllPlayers.Items[j]);
-                    }
-                    MessageBoxTranslateHelper("Can not pick more than 3 players", "Maksimalno 3 igrača");
+                    lbFavoritePlayers.Items.RemoveAt(0);
+                    lbAllPlayers.Items.Add(lbAllPlayers.Items[0]);
                 }
 
+                MessageBoxTranslateHelper("Can not pick more than 3 players", "Maksimalno 3 igrača");
             }
+
         }
 
-        private void MessageBoxTranslateHelper(string str1, string str2) {
+        private void MessageBoxTranslateHelper(string english, string croatian) {
             string culture = CultureInfo.CurrentCulture.ToString();
 
             switch (culture)
             {
                 case "en":
-                    MessageBox.Show(str1);
+                    MessageBox.Show(english);
                     break;
                 case "hr-HR":
-                    MessageBox.Show(str2);
+                    MessageBox.Show(croatian);
                     break;
             }
         }

@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "Jy/0rPxmpabHVGe32cg0/FFN70BotGynOYs6BGhqxGutFBcY1ORQoDs3a4HyZJI17CXjuYi6HaHQhg8hoHGBNQ==",
+  "dgSpecHash": "wRjiurNnVVLtED8iCaZZTJi3cGi7+gkb72/KCXG0/LAPsNUQZ+r6ZZg9CI35wzV0zs4qyZ8h4+e6IH5C65WNkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\WFapp\\WFapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\domin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\domin\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512"
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
   ],
   "logs": []
 }

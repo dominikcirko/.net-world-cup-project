@@ -9,6 +9,6 @@ namespace DataLayer.Utils.Interface
     public interface IFileHandler
     {
         public string FileReader();
-        public void FileWriter(ComboBox comboBox = null);
+        public void FileWriter(ComboBox comboBox = null, Label label = null);
     }
 }
