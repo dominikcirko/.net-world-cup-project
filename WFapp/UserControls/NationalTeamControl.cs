@@ -68,7 +68,31 @@ namespace WFapp.UserControls
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-
+            PlayerPictures playerPictures = new PlayerPictures();
+            if (Parent != null)
+            {
+                Parent.Controls.Add(playerPictures);
+                playerPictures.Dock = DockStyle.Fill;
+                this.GetPnlFavoritePlayers().Visible = false;
+                playerPictures.BringToFront();
+                playerPictures.GetPnlPlayerPictures().Visible = true;
+            }
+           
+            try
+            {
+            }
+            catch (FileNotFoundException ex)
+            {
+                MessageBox.Show("File not found. Error message: " + ex.Message);
+            }
+            string culture = CultureInfo.CurrentCulture.ToString();
+            switch (culture)
+            {
+                case "en":
+                    break;
+                case "hr-HR":
+                    break;
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -118,11 +142,6 @@ namespace WFapp.UserControls
             string s = lbAllPlayers.Items[index].ToString();
             DragDropEffects dde1 = DoDragDrop(s,
                 DragDropEffects.All);
-
-            //if (dde1 == DragDropEffects.All)
-            //{
-            //    lbAllPlayers.Items.RemoveAt(lbAllPlayers.IndexFromPoint(e.X, e.Y));
-            //}
         }
 
         private void lbFavoritePlayers_DragOver(object sender, DragEventArgs e)
@@ -168,7 +187,6 @@ namespace WFapp.UserControls
                 lbAllPlayers.Items.Remove(lbAllPlayers.SelectedItem);
             }
             RestrictPlayerNumber();
-            //_ntl.FileWriter(lbFavoritePlayers);
         }
         private void RestrictPlayerNumber()
         {
@@ -179,7 +197,7 @@ namespace WFapp.UserControls
             }
                 if (lbFavoritePlayers.Items.Count == 3)
                 {
-                    _ntl.FileWriter(lbFavoritePlayers);
+                    _ntl.FavoritePlayersFileWriter(lbFavoritePlayers);
                     return;
                 }               
 
@@ -195,6 +213,8 @@ namespace WFapp.UserControls
             }
 
         }
+
+
 
         private void MessageBoxTranslateHelper(string english, string croatian) {
             string culture = CultureInfo.CurrentCulture.ToString();

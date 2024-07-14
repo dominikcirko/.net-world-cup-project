@@ -9,6 +9,7 @@ using DataLayer.Constants;
 
 using static DataLayer.Utils.Implementation.SelectGenderLanguageUtils;
 using Microsoft.VisualBasic;
+using System.Collections.Specialized;
 
 namespace DataLayer.Utils.Implementation
 {
@@ -17,35 +18,50 @@ namespace DataLayer.Utils.Implementation
         private readonly object fileLock = new();
 
 
-        public void FileWriter(ListBox lb)
+        public void FavoritePlayersFileWriter(ListBox lb)
         {
             string culture = CultureInfo.CurrentCulture.ToString();
 
-            string relativePath = Constants.Constants.TXT_FILE_PATH;
+            string path = Constants.Constants.TXT_FILE_PATH;
             lock (fileLock)
             {
-                using (StreamWriter sw = new(relativePath, true))
+                using (StreamWriter sw = new(path, true))
                 {
-                    if (File.Exists(relativePath))
+                    if (File.Exists(path))
                     {
-                        int num = 0;
                         sw.WriteLine();
                         LanguageHelper(sw, culture, "Favorite players: ", "Omiljeni igraci: ");
                         foreach (var item in lb.Items)
                         {
-                            num++;
                             string itemString = item.ToString();
-                            sw.WriteLine(itemString);
-                            
+                            sw.WriteLine(itemString);                            
                         }
                     }
                     else
-                    {
                         throw new FileNotFoundException();
-                    }
-
                 }
             }
+        }
+
+        public void ParsePlayerNamesFromFile() {
+            string culture = CultureInfo.CurrentCulture.ToString();
+
+            string path = Constants.Constants.TXT_FILE_PATH;
+            lock (fileLock)
+            {
+                using (StreamReader sr = new(path, true))
+                {
+                    if (File.Exists(path))
+                    {
+                        string name;
+                        name = sr.ReadLine();
+                        Console.WriteLine(name + " ");
+                    }
+                    else
+                        throw new FileNotFoundException();
+                }
+            }
+
         }
         public void LanguageHelper(StreamWriter sw, string culture, string english, string croatian)
         {
