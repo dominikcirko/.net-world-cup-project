@@ -195,11 +195,12 @@ namespace WFapp.UserControls
                 lbFavoritePlayers.Items.Add(lbAllPlayers.SelectedItems[0]);
                 lbAllPlayers.Items.Remove(lbAllPlayers.SelectedItems[0]);
             }
-                if (lbFavoritePlayers.Items.Count == 3)
-                {
-                    _ntl.FavoritePlayersFileWriter(lbFavoritePlayers);
-                    return;
-                }               
+            if (lbFavoritePlayers.Items.Count == 3)
+            {
+                _ntl.FavoritePlayersFileWriter(lbFavoritePlayers);
+                _ntl.ParsePlayerNamesFromFile();
+                return;
+            }
 
             if (lbFavoritePlayers.Items.Count > 3)
             {

@@ -44,6 +44,9 @@
             btnNext = new Button();
             btnExit = new Button();
             pnlPlayerPictures = new Panel();
+            btnUpload1 = new Button();
+            btnUpload2 = new Button();
+            btnUpload3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pbPlayer3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbPlayer1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbPlayer2).BeginInit();
@@ -128,6 +131,9 @@
             // 
             // pnlPlayerPictures
             // 
+            pnlPlayerPictures.Controls.Add(btnUpload3);
+            pnlPlayerPictures.Controls.Add(btnUpload2);
+            pnlPlayerPictures.Controls.Add(btnUpload1);
             pnlPlayerPictures.Controls.Add(lbHeadline);
             pnlPlayerPictures.Controls.Add(btnNext);
             pnlPlayerPictures.Controls.Add(btnExit);
@@ -141,6 +147,36 @@
             pnlPlayerPictures.Name = "pnlPlayerPictures";
             pnlPlayerPictures.Size = new Size(640, 449);
             pnlPlayerPictures.TabIndex = 19;
+            // 
+            // btnUpload1
+            // 
+            btnUpload1.Location = new Point(49, 283);
+            btnUpload1.Name = "btnUpload1";
+            btnUpload1.Size = new Size(159, 29);
+            btnUpload1.TabIndex = 19;
+            btnUpload1.Text = "button1";
+            btnUpload1.UseVisualStyleBackColor = true;
+            btnUpload1.Click += btnUpload1_Click;
+            // 
+            // btnUpload2
+            // 
+            btnUpload2.Location = new Point(244, 283);
+            btnUpload2.Name = "btnUpload2";
+            btnUpload2.Size = new Size(159, 29);
+            btnUpload2.TabIndex = 20;
+            btnUpload2.Text = "button2";
+            btnUpload2.UseVisualStyleBackColor = true;
+            btnUpload2.Click += btnUpload2_Click;
+            // 
+            // btnUpload3
+            // 
+            btnUpload3.Location = new Point(439, 283);
+            btnUpload3.Name = "btnUpload3";
+            btnUpload3.Size = new Size(159, 29);
+            btnUpload3.TabIndex = 21;
+            btnUpload3.Text = "button3";
+            btnUpload3.UseVisualStyleBackColor = true;
+            btnUpload3.Click += btnUpload3_Click;
             // 
             // PlayerPictures
             // 
@@ -169,5 +205,8 @@
         private Button btnNext;
         private Button btnExit;
         private Panel pnlPlayerPictures;
+        private Button btnUpload3;
+        private Button btnUpload2;
+        private Button btnUpload1;
     }
 }

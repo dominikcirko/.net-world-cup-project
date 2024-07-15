@@ -1,0 +1,5 @@
+
+Omiljeni igraci: 
+Manuel NEUER|broj: 1|pozicija: Goalie|kapetan: True
+Marvin PLATTENHARDT|broj: 2|pozicija: Defender|kapetan: False
+Mats HUMMELS|broj: 5|pozicija: Defender|kapetan: False

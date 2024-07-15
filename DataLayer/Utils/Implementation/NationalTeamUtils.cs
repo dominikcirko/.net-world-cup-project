@@ -22,7 +22,7 @@ namespace DataLayer.Utils.Implementation
         {
             string culture = CultureInfo.CurrentCulture.ToString();
 
-            string path = Constants.Constants.TXT_FILE_PATH;
+            string path = Constants.Constants.FAV_PLAYER_NAMES;
             lock (fileLock)
             {
                 using (StreamWriter sw = new(path, true))
@@ -53,9 +53,13 @@ namespace DataLayer.Utils.Implementation
                 {
                     if (File.Exists(path))
                     {
-                        string name;
-                        name = sr.ReadLine();
-                        Console.WriteLine(name + " ");
+                        while (sr.ReadLine() != null)
+                        {
+                            string name;
+                            name = sr.ReadLine();
+                            Console.WriteLine(name + " ");
+                        }
+                        
                     }
                     else
                         throw new FileNotFoundException();
