@@ -68,7 +68,7 @@ namespace WFapp.UserControls
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            PlayerPictures playerPictures = new PlayerPictures();
+            PlayerPictures playerPictures = new PlayerPictures(new PlayerPicturesUtils());
             if (Parent != null)
             {
                 Parent.Controls.Add(playerPictures);

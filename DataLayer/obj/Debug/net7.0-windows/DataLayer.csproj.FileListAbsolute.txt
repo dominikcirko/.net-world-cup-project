@@ -11,3 +11,16 @@ C:\Users\domin\source\repos\dotNET-Project\DataLayer\obj\Debug\net7.0-windows\Da
 C:\Users\domin\source\repos\dotNET-Project\DataLayer\obj\Debug\net7.0-windows\refint\DataLayer.dll
 C:\Users\domin\source\repos\dotNET-Project\DataLayer\obj\Debug\net7.0-windows\DataLayer.pdb
 C:\Users\domin\source\repos\dotNET-Project\DataLayer\obj\Debug\net7.0-windows\ref\DataLayer.dll
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\bin\Debug\net7.0-windows\DataLayer.deps.json
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\bin\Debug\net7.0-windows\DataLayer.dll
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\bin\Debug\net7.0-windows\DataLayer.pdb
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\DataLayer.csproj.AssemblyReference.cache
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\DataLayer.AssemblyInfoInputs.cache
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\DataLayer.AssemblyInfo.cs
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\DataLayer.sourcelink.json
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\DataLayer.dll
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\refint\DataLayer.dll
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\DataLayer.pdb
+C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\DataLayer\obj\Debug\net7.0-windows\ref\DataLayer.dll

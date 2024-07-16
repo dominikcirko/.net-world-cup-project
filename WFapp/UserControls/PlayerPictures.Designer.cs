@@ -34,6 +34,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerPictures));
             lbHeadline = new Label();
             lbPlayer1 = new Label();
             lbPlayer3 = new Label();
@@ -44,9 +45,9 @@
             btnNext = new Button();
             btnExit = new Button();
             pnlPlayerPictures = new Panel();
-            btnUpload1 = new Button();
-            btnUpload2 = new Button();
             btnUpload3 = new Button();
+            btnUpload2 = new Button();
+            btnUpload1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pbPlayer3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbPlayer1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbPlayer2).BeginInit();
@@ -55,82 +56,60 @@
             // 
             // lbHeadline
             // 
-            lbHeadline.AutoSize = true;
-            lbHeadline.Location = new Point(76, 36);
+            resources.ApplyResources(lbHeadline, "lbHeadline");
             lbHeadline.Name = "lbHeadline";
-            lbHeadline.Size = new Size(0, 20);
-            lbHeadline.TabIndex = 0;
             // 
             // lbPlayer1
             // 
-            lbPlayer1.AutoSize = true;
-            lbPlayer1.Location = new Point(76, 111);
+            resources.ApplyResources(lbPlayer1, "lbPlayer1");
             lbPlayer1.Name = "lbPlayer1";
-            lbPlayer1.Size = new Size(0, 20);
-            lbPlayer1.TabIndex = 1;
             // 
             // lbPlayer3
             // 
-            lbPlayer3.AutoSize = true;
-            lbPlayer3.Location = new Point(477, 111);
+            resources.ApplyResources(lbPlayer3, "lbPlayer3");
             lbPlayer3.Name = "lbPlayer3";
-            lbPlayer3.Size = new Size(0, 20);
-            lbPlayer3.TabIndex = 2;
             // 
             // lbPlayer2
             // 
-            lbPlayer2.AutoSize = true;
-            lbPlayer2.Location = new Point(286, 111);
+            resources.ApplyResources(lbPlayer2, "lbPlayer2");
             lbPlayer2.Name = "lbPlayer2";
-            lbPlayer2.Size = new Size(0, 20);
-            lbPlayer2.TabIndex = 3;
             // 
             // pbPlayer3
             // 
-            pbPlayer3.Location = new Point(439, 172);
+            resources.ApplyResources(pbPlayer3, "pbPlayer3");
+            pbPlayer3.BorderStyle = BorderStyle.FixedSingle;
             pbPlayer3.Name = "pbPlayer3";
-            pbPlayer3.Size = new Size(159, 105);
-            pbPlayer3.TabIndex = 4;
             pbPlayer3.TabStop = false;
             // 
             // pbPlayer1
             // 
-            pbPlayer1.Location = new Point(49, 172);
+            resources.ApplyResources(pbPlayer1, "pbPlayer1");
+            pbPlayer1.BorderStyle = BorderStyle.FixedSingle;
             pbPlayer1.Name = "pbPlayer1";
-            pbPlayer1.Size = new Size(159, 105);
-            pbPlayer1.TabIndex = 5;
             pbPlayer1.TabStop = false;
             // 
             // pbPlayer2
             // 
-            pbPlayer2.Location = new Point(244, 172);
+            resources.ApplyResources(pbPlayer2, "pbPlayer2");
+            pbPlayer2.BorderStyle = BorderStyle.FixedSingle;
             pbPlayer2.Name = "pbPlayer2";
-            pbPlayer2.Size = new Size(159, 105);
-            pbPlayer2.TabIndex = 6;
             pbPlayer2.TabStop = false;
             // 
             // btnNext
             // 
-            btnNext.ImeMode = ImeMode.NoControl;
-            btnNext.Location = new Point(439, 375);
+            resources.ApplyResources(btnNext, "btnNext");
             btnNext.Name = "btnNext";
-            btnNext.Size = new Size(193, 55);
-            btnNext.TabIndex = 17;
-            btnNext.Text = "Sljedeće";
             btnNext.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
-            btnExit.ImeMode = ImeMode.NoControl;
-            btnExit.Location = new Point(19, 375);
+            resources.ApplyResources(btnExit, "btnExit");
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(193, 55);
-            btnExit.TabIndex = 18;
-            btnExit.Text = "Izlaz";
             btnExit.UseVisualStyleBackColor = true;
             // 
             // pnlPlayerPictures
             // 
+            resources.ApplyResources(pnlPlayerPictures, "pnlPlayerPictures");
             pnlPlayerPictures.Controls.Add(btnUpload3);
             pnlPlayerPictures.Controls.Add(btnUpload2);
             pnlPlayerPictures.Controls.Add(btnUpload1);
@@ -143,48 +122,35 @@
             pnlPlayerPictures.Controls.Add(pbPlayer2);
             pnlPlayerPictures.Controls.Add(lbPlayer1);
             pnlPlayerPictures.Controls.Add(pbPlayer1);
-            pnlPlayerPictures.Location = new Point(3, 3);
             pnlPlayerPictures.Name = "pnlPlayerPictures";
-            pnlPlayerPictures.Size = new Size(640, 449);
-            pnlPlayerPictures.TabIndex = 19;
-            // 
-            // btnUpload1
-            // 
-            btnUpload1.Location = new Point(49, 283);
-            btnUpload1.Name = "btnUpload1";
-            btnUpload1.Size = new Size(159, 29);
-            btnUpload1.TabIndex = 19;
-            btnUpload1.Text = "button1";
-            btnUpload1.UseVisualStyleBackColor = true;
-            btnUpload1.Click += btnUpload1_Click;
-            // 
-            // btnUpload2
-            // 
-            btnUpload2.Location = new Point(244, 283);
-            btnUpload2.Name = "btnUpload2";
-            btnUpload2.Size = new Size(159, 29);
-            btnUpload2.TabIndex = 20;
-            btnUpload2.Text = "button2";
-            btnUpload2.UseVisualStyleBackColor = true;
-            btnUpload2.Click += btnUpload2_Click;
             // 
             // btnUpload3
             // 
-            btnUpload3.Location = new Point(439, 283);
+            resources.ApplyResources(btnUpload3, "btnUpload3");
             btnUpload3.Name = "btnUpload3";
-            btnUpload3.Size = new Size(159, 29);
-            btnUpload3.TabIndex = 21;
-            btnUpload3.Text = "button3";
             btnUpload3.UseVisualStyleBackColor = true;
             btnUpload3.Click += btnUpload3_Click;
             // 
+            // btnUpload2
+            // 
+            resources.ApplyResources(btnUpload2, "btnUpload2");
+            btnUpload2.Name = "btnUpload2";
+            btnUpload2.UseVisualStyleBackColor = true;
+            btnUpload2.Click += btnUpload2_Click;
+            // 
+            // btnUpload1
+            // 
+            resources.ApplyResources(btnUpload1, "btnUpload1");
+            btnUpload1.Name = "btnUpload1";
+            btnUpload1.UseVisualStyleBackColor = true;
+            btnUpload1.Click += btnUpload1_Click;
+            // 
             // PlayerPictures
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(pnlPlayerPictures);
             Name = "PlayerPictures";
-            Size = new Size(646, 455);
             ((System.ComponentModel.ISupportInitialize)pbPlayer3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbPlayer1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbPlayer2).EndInit();

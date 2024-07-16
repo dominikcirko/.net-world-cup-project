@@ -14,6 +14,7 @@ namespace DataLayer.Constants
         public static string MATCH_INFO_WOMEN= "https://worldcup-vua.nullbit.hr/women/matches";
         public static string TXT_FILE_PATH = "info.txt";
         public static string FAV_PLAYER_NAMES = "names.txt";
+        public static string PARSED_FAV_PLAYER_NAMES = "parsedNames.txt";
 
     }
 }

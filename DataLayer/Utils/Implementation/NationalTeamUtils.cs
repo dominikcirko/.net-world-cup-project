@@ -10,6 +10,7 @@ using DataLayer.Constants;
 using static DataLayer.Utils.Implementation.SelectGenderLanguageUtils;
 using Microsoft.VisualBasic;
 using System.Collections.Specialized;
+using System.Reflection;
 
 namespace DataLayer.Utils.Implementation
 {
@@ -43,30 +44,42 @@ namespace DataLayer.Utils.Implementation
             }
         }
 
-        public void ParsePlayerNamesFromFile() {
-            string culture = CultureInfo.CurrentCulture.ToString();
+        public void ParsePlayerNamesFromFile()
+        {
+            string pathRead = Constants.Constants.FAV_PLAYER_NAMES;
+            string pathWrite = Constants.Constants.PARSED_FAV_PLAYER_NAMES;
+            object fileLock = new object();
 
-            string path = Constants.Constants.TXT_FILE_PATH;
             lock (fileLock)
             {
-                using (StreamReader sr = new(path, true))
+                if (File.Exists(pathRead))
                 {
-                    if (File.Exists(path))
+                    using (StreamReader sr = new StreamReader(pathRead))
                     {
-                        while (sr.ReadLine() != null)
+                        using (StreamWriter sw = new StreamWriter(pathWrite))
                         {
-                            string name;
-                            name = sr.ReadLine();
-                            Console.WriteLine(name + " ");
+                            string line;
+                            while ((line = sr.ReadLine()) != null)
+                            {
+                                int index = line.IndexOf('|');
+                                if (index != -1)
+                                {
+                                    string name = line.Substring(0, index);
+                                    sw.WriteLine(name); //write parsed names to pathWrite
+                                }
+                            }
                         }
-                        
                     }
-                    else
-                        throw new FileNotFoundException();
+                    File.WriteAllText(pathRead, string.Empty);
+                }
+                else
+                {
+                    throw new FileNotFoundException($"File not found: {pathRead}");
                 }
             }
-
         }
+
+       
         public void LanguageHelper(StreamWriter sw, string culture, string english, string croatian)
         {
             switch (culture)

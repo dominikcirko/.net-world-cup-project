@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLayer.Utils.Implementation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,13 +14,22 @@ namespace WFapp.UserControls
     public partial class PlayerPictures : UserControl
     {
         public Panel GetPnlPlayerPictures() { return pnlPlayerPictures; }
+        private readonly PlayerPicturesUtils _playerPicturesUtils;
+        static string projectDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName;
+        static string player1 = Path.Combine(projectDirectory, "DataLayer", "images", "defaultImgPlayer.jpg");
+        static string player2 = Path.Combine(projectDirectory, "DataLayer", "images", "defaultImgPlayer.jpg");
+        static string player3 = Path.Combine(projectDirectory, "DataLayer", "images", "defaultImgPlayer.jpg");
 
-        public PlayerPictures()
+        public PlayerPictures(PlayerPicturesUtils playerPicturesUtils)
         {
             InitializeComponent();
-            pbPlayer1.BackColor = Color.Red;
-            pbPlayer2.BackColor = Color.Green;
-            pbPlayer3.BackColor = Color.Blue;
+            pbPlayer1.Image = Image.FromFile(player1);
+            pbPlayer2.Image = Image.FromFile(player2);
+            pbPlayer3.Image = Image.FromFile(player3);
+            _playerPicturesUtils = playerPicturesUtils;
+            _playerPicturesUtils.MapParsedNamesToLabels(lbPlayer1, lbPlayer2, lbPlayer3);
+
+
         }
 
         private void ImageUpload(PictureBox pb) {

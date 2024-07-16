@@ -227,24 +227,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\domin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\dominikcirko\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\WFapp\\WFapp.csproj",
+      "projectUniqueName": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\WFapp\\WFapp.csproj",
       "projectName": "WFapp",
-      "projectPath": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\WFapp\\WFapp.csproj",
-      "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\WFapp\\obj\\",
+      "projectPath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\WFapp\\WFapp.csproj",
+      "packagesPath": "C:\\Users\\dominikcirko\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\WFapp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\dominikcirko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -258,8 +253,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\domin\\source\\repos\\dotNET-Project\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj"
             }
           }
         }
@@ -295,24 +290,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -321,7 +298,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
       }
     }
   }
