@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj": {}
+    "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj",
+        "projectPath": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\dominikcirko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dominikcirko\\AppData\\Roaming\\NuGet\\NuGet.Config",

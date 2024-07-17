@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5YJg9VeRRQqTeqJtAqJCrmwPvo5exPbW5ZCBlfy1iiS3QiCf4ibHoi3yvXQpGDafIxbQ0EcGKkW5lVtNsJkBQA==",
+  "dgSpecHash": "0FjDRPuGevCFkjMrCO+6CNY7Y57VHcsa71bXe6OhT2QY8YxcYkIdWRy7j6sU9QPuRjwh/pVGJ4w6QRVkkh2uLA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\WFapp\\WFapp.csproj",
+  "projectFilePath": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\WFapp\\WFapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dominikcirko\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\dominikcirko\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",

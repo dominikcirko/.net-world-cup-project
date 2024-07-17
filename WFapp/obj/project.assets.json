@@ -232,11 +232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\WFapp\\WFapp.csproj",
+      "projectUniqueName": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\WFapp\\WFapp.csproj",
       "projectName": "WFapp",
-      "projectPath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\WFapp\\WFapp.csproj",
+      "projectPath": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\WFapp\\WFapp.csproj",
       "packagesPath": "C:\\Users\\dominikcirko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\WFapp\\obj\\",
+      "outputPath": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\WFapp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dominikcirko\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -253,8 +253,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "C:\\Users\\dominikcirko\\Source\\Repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj"
+            "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj"
             }
           }
         }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WFapp.Properties;
 
 namespace WFapp.UserControls
 {
@@ -23,9 +24,9 @@ namespace WFapp.UserControls
         public PlayerPictures(PlayerPicturesUtils playerPicturesUtils)
         {
             InitializeComponent();
-            pbPlayer1.Image = Image.FromFile(player1);
-            pbPlayer2.Image = Image.FromFile(player2);
-            pbPlayer3.Image = Image.FromFile(player3);
+            pbPlayer1.Image = Properties.Resources.defaultImg; //set default img to players
+            pbPlayer2.Image = Properties.Resources.defaultImg;
+            pbPlayer3.Image = Properties.Resources.defaultImg;
             _playerPicturesUtils = playerPicturesUtils;
             _playerPicturesUtils.MapParsedNamesToLabels(lbPlayer1, lbPlayer2, lbPlayer3);
 
@@ -36,7 +37,6 @@ namespace WFapp.UserControls
 
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.Title = "Select an image";
                 openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
