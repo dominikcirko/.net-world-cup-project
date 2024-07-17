@@ -10,5 +10,8 @@
     <Compile Update="UserControls\PlayerPictures.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UserControls\RangListsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

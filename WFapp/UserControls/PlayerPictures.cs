@@ -16,10 +16,6 @@ namespace WFapp.UserControls
     {
         public Panel GetPnlPlayerPictures() { return pnlPlayerPictures; }
         private readonly PlayerPicturesUtils _playerPicturesUtils;
-        static string projectDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName;
-        static string player1 = Path.Combine(projectDirectory, "DataLayer", "images", "defaultImgPlayer.jpg");
-        static string player2 = Path.Combine(projectDirectory, "DataLayer", "images", "defaultImgPlayer.jpg");
-        static string player3 = Path.Combine(projectDirectory, "DataLayer", "images", "defaultImgPlayer.jpg");
 
         public PlayerPictures(PlayerPicturesUtils playerPicturesUtils)
         {
