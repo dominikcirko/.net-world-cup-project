@@ -23,8 +23,8 @@ namespace DataLayer
         public int distance_covered { get; set; }
         public int balls_recovered { get; set; }
         public int tackles { get; set; }
-        public int clearances { get; set; }
-        public int yellow_cards { get; set; }
+        public int? clearances { get; set; }
+        public int? yellow_cards { get; set; }
         public int red_cards { get; set; }
         public int? fouls_committed { get; set; }
         public string tactics { get; set; }

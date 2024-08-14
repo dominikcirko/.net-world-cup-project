@@ -63,3 +63,5 @@ C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\WFapp\obj\Debug\net7.0
 C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\WFapp\obj\Debug\net7.0-windows\WFapp.pdb
 C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\WFapp\obj\Debug\net7.0-windows\WFapp.genruntimeconfig.cache
 C:\Users\dominikcirko\Source\Repos\.net-world-cup-project\WFapp\obj\Debug\net7.0-windows\ref\WFapp.dll
+C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.UserControls.RangListsControl.resources
+C:\Users\domin\source\repos\dotNET-Project\WFapp\obj\Debug\net7.0-windows\WFapp.UserControls.PlayerPictures.en.resources

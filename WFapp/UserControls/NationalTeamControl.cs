@@ -68,7 +68,7 @@ namespace WFapp.UserControls
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            PlayerPictures playerPictures = new PlayerPictures(new PlayerPicturesUtils());
+            PlayerPictures playerPictures = new PlayerPictures(new PlayerPicturesUtils(), this._initialForm);
             if (Parent != null)
             {
                 Parent.Controls.Add(playerPictures);
@@ -111,6 +111,7 @@ namespace WFapp.UserControls
             }
             catch (Exception ex)
             { MessageBox.Show(ex.Message); }
+
             foreach (var rd in rootData)
             {
                 Home_Team_Statistics home_Team_Statistics = rd.home_team_statistics;
@@ -128,7 +129,7 @@ namespace WFapp.UserControls
                     foreach (var player in substitutes)
                     {
                         lbAllPlayers.Items.Add(player.name + "|broj: " + player.shirt_number + "|pozicija: " + player.position + "|kapetan: " + player.captain);
-                    }
+                    }   
                 }
             }
 

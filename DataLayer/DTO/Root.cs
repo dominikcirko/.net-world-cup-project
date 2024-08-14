@@ -9,6 +9,5 @@ namespace DataLayer.DTO
     public class Root
     {
         public Home_Team_Statistics home_team_statistics { get; set; }
-
     }
 }

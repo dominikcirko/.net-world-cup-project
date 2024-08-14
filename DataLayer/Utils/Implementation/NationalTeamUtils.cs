@@ -1,16 +1,4 @@
-﻿using DataLayer.Utils.Interface;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataLayer.Constants;
-
-using static DataLayer.Utils.Implementation.SelectGenderLanguageUtils;
-using Microsoft.VisualBasic;
-using System.Collections.Specialized;
-using System.Reflection;
+﻿using System.Globalization;
 
 namespace DataLayer.Utils.Implementation
 {
@@ -65,7 +53,7 @@ namespace DataLayer.Utils.Implementation
                                 if (index != -1)
                                 {
                                     string name = line.Substring(0, index);
-                                    sw.WriteLine(name); //write parsed names to pathWrite
+                                    sw.WriteLine(name);
                                 }
                             }
                         }

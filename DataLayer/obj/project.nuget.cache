@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "sk5Yz82k4tMRrnZ5guPz2nirz2TEpe/4bhvoxWxUDjWFfAo8yoHHmjwNDD/tFYCAe7XCMFgudX5svAx4U0fmww==",
+  "dgSpecHash": "rSfzWqZVSF16nW20yXCNk2K/jN5tIPuppU7bvlxB3V6YgGgdYGU3sYvrhTZhSswLxqwNgNqbDao86XKzpGU3XA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dominikcirko\\source\\repos\\.net-world-cup-project\\DataLayer\\DataLayer.csproj",
+  "projectFilePath": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\DataLayer\\DataLayer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dominikcirko\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\dominikcirko\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\dominikcirko\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512"
+    "C:\\Users\\domin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512"
   ],
   "logs": [
     {
