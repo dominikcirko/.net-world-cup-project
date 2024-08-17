@@ -3,6 +3,7 @@ using DataLayer.Constants;
 using DataLayer.DTO;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,6 +24,7 @@ namespace WFapp.UserControls
             lbRangListOther.HorizontalScrollbar = true;
             lbRangListPlayers.HorizontalScrollbar = true;
             _initialForm = initialForm;
+            btnExit.Size = new Size(231, 51);
 
         }
 
@@ -35,7 +37,7 @@ namespace WFapp.UserControls
                 .Any(line => line.Contains("Championship: female") || line.Contains("Prvenstvo: žensko"));
 
             if (isTrueMalePlayers)
-                await FetchAndDisplayRankingListAsync(Constants.MATCH_INFO_MEN); 
+                await FetchAndDisplayRankingListAsync(Constants.MATCH_INFO_MEN);
             else if (isTrueFemalePlayers)
                 await FetchAndDisplayRankingListAsync(Constants.MATCH_INFO_WOMEN);
         }
@@ -112,7 +114,7 @@ namespace WFapp.UserControls
                         playerStats[player.name!] = (currentStats.Goals, currentStats.YellowCards, currentStats.Appearances + 1);
                     }
                 }
-                    
+
 
                 if (match.home_team_events != null)
                 {
@@ -176,7 +178,7 @@ namespace WFapp.UserControls
 
             foreach (var item in rankingList)
             {
-                lbRangListPlayers.Items.Add($"{item.Player} - Goals: {item.Goals}, Yellow Cards: {item.YellowCards}, Appearances: {item.Appearances}");
+                lbRangListPlayers.Items.Add($"{item.Player} - goals: {item.Goals}, yellow cards: {item.YellowCards}, appearances: {item.Appearances}");
             }
         }
 
@@ -198,8 +200,24 @@ namespace WFapp.UserControls
 
             foreach (var item in matchVisitorList)
             {
-                lbRangListOther.Items.Add($"Location: {item.Location}, Attendance: {item.Attendance}, Home Team: {item.HomeTeam}, Away Team: {item.AwayTeam}");
+                lbRangListOther.Items.Add($"location: {item.Location}, attendance: {item.Attendance}, home team: {item.HomeTeam}, away team: {item.AwayTeam}");
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = new();
+            string culture = CultureInfo.CurrentCulture.ToString();
+            switch (culture)
+            {
+                case "en":
+                    dialog = MessageBox.Show("Do you want to close the application?", "Alert!", MessageBoxButtons.YesNo);
+                    break;
+                case "hr-HR":
+                    dialog = MessageBox.Show("Želite li izaći iz aplikacije?", "Pozor!", MessageBoxButtons.YesNo);
+                    break;
+            }
+            if (dialog == DialogResult.Yes) Environment.Exit(1);
         }
     }
 }

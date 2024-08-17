@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangListsControl));
             lbRangListPlayers = new ListBox();
-            btnToPdf = new Button();
-            lblRangListLabel = new Label();
+            btnExit = new Button();
             pnlRangList = new Panel();
             lbRangListOther = new ListBox();
             pnlRangList.SuspendLayout();
@@ -38,69 +38,45 @@
             // 
             // lbRangListPlayers
             // 
+            resources.ApplyResources(lbRangListPlayers, "lbRangListPlayers");
             lbRangListPlayers.FormattingEnabled = true;
-            lbRangListPlayers.ItemHeight = 20;
-            lbRangListPlayers.Location = new Point(28, 52);
             lbRangListPlayers.Name = "lbRangListPlayers";
-            lbRangListPlayers.Size = new Size(303, 344);
-            lbRangListPlayers.TabIndex = 0;
             // 
-            // btnToPdf
+            // btnExit
             // 
-            btnToPdf.Location = new Point(28, 408);
-            btnToPdf.Name = "btnToPdf";
-            btnToPdf.Size = new Size(231, 88);
-            btnToPdf.TabIndex = 1;
-            btnToPdf.Text = "btnToPdf";
-            btnToPdf.UseVisualStyleBackColor = true;
-            // 
-            // lblRangListLabel
-            // 
-            lblRangListLabel.AutoSize = true;
-            lblRangListLabel.Location = new Point(28, 18);
-            lblRangListLabel.Name = "lblRangListLabel";
-            lblRangListLabel.Size = new Size(118, 20);
-            lblRangListLabel.TabIndex = 2;
-            lblRangListLabel.Text = "lblRangListLabel";
+            resources.ApplyResources(btnExit, "btnExit");
+            btnExit.Name = "btnExit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // pnlRangList
             // 
+            resources.ApplyResources(pnlRangList, "pnlRangList");
             pnlRangList.Controls.Add(lbRangListOther);
-            pnlRangList.Controls.Add(lblRangListLabel);
-            pnlRangList.Controls.Add(btnToPdf);
+            pnlRangList.Controls.Add(btnExit);
             pnlRangList.Controls.Add(lbRangListPlayers);
-            pnlRangList.Location = new Point(0, 0);
             pnlRangList.Name = "pnlRangList";
-            pnlRangList.Size = new Size(661, 499);
-            pnlRangList.TabIndex = 3;
             // 
             // lbRangListOther
             // 
+            resources.ApplyResources(lbRangListOther, "lbRangListOther");
             lbRangListOther.FormattingEnabled = true;
-            lbRangListOther.ItemHeight = 20;
-            lbRangListOther.Location = new Point(337, 52);
             lbRangListOther.Name = "lbRangListOther";
-            lbRangListOther.Size = new Size(303, 344);
-            lbRangListOther.TabIndex = 3;
             // 
             // RangListsControl
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(pnlRangList);
-            Margin = new Padding(2);
             Name = "RangListsControl";
-            Size = new Size(661, 499);
             pnlRangList.ResumeLayout(false);
-            pnlRangList.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private ListBox lbRangListPlayers;
-        private Button btnToPdf;
-        private Label lblRangListLabel;
+        private Button btnExit;
         private Panel pnlRangList;
         private ListBox lbRangListOther;
     }

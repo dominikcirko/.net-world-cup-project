@@ -25,11 +25,11 @@ namespace WFapp.UserControls
         public Substitute[] substitute { get; set; }
 
         private readonly InitialForm _initialForm;
-        JsonDeserializer jsonDeserializer = new(new HttpClient());
+        private JsonDeserializer jsonDeserializer = new JsonDeserializer(new HttpClient());
 
-
-        // Dictionary to store player images
         private Dictionary<string, Image> playerImages = new Dictionary<string, Image>();
+
+        private Image defaultPlayerImage;
 
         public PlayerPictures(PlayerPicturesUtils playerPicturesUtils, InitialForm initialForm)
         {
@@ -44,6 +44,21 @@ namespace WFapp.UserControls
             pbPlayer1.Size = new System.Drawing.Size(160, 105);
             _playerPicturesUtils = playerPicturesUtils;
 
+            string defaultImagePath = Path.Combine(@"..\..\..\..\DataLayer\images\", "player3.png");
+
+            if (File.Exists(defaultImagePath))
+            {
+                defaultPlayerImage = Image.FromFile(defaultImagePath);
+            }
+            else
+            {
+                MessageBox.Show("Default image file not found. Please check the path.");
+                defaultPlayerImage = new Bitmap(160, 105); // Placeholder empty image
+            }
+
+            pbPlayer1.Image = defaultPlayerImage;
+            pbPlayer1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbPlayer1.Visible = true;
 
             lbAllPlayers.SelectedIndexChanged += LbAllPlayers_SelectedIndexChanged;
             btnUpload.Click += btnUpload_Click;
@@ -54,30 +69,37 @@ namespace WFapp.UserControls
 
         private string GetPlayerImagePath(string playerName)
         {
-            // Define the path relative to the project directory
-            string imagesFolder = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\DataLayer\images"));
-
-            // Return the full path for the player's image file
+            string relativePath = @"..\..\..\..\DataLayer\images";
+            string imagesFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
             return Path.Combine(imagesFolder, playerName + "Img.png");
         }
 
         private void LbAllPlayers_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedPlayer = lbAllPlayers.SelectedItem.ToString();
-            string imagePath = GetPlayerImagePath(selectedPlayer);
-
-            if (File.Exists(imagePath))
+            if (lbAllPlayers.SelectedItem != null)
             {
-                pbPlayer1.Image = Image.FromFile(imagePath);
-            }
-            else
-            {
+                string selectedPlayer = lbAllPlayers.SelectedItem.ToString();
+                string imagePath = GetPlayerImagePath(selectedPlayer);
 
-            }
+                if (File.Exists(imagePath))
+                {
+                    if (!playerImages.ContainsKey(selectedPlayer))
+                    {
+                        playerImages[selectedPlayer] = Image.FromFile(imagePath);
+                    }
 
-            pbPlayer1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbPlayer1.Visible = true;
-            btnUpload.Visible = true;
+                    pbPlayer1.Image = playerImages[selectedPlayer];
+                }
+                else
+                {
+                    // Show default image if no specific image exists
+                    pbPlayer1.Image = defaultPlayerImage;
+                }
+
+                pbPlayer1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbPlayer1.Visible = true;
+                btnUpload.Visible = true;
+            }
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
@@ -94,21 +116,33 @@ namespace WFapp.UserControls
                 {
                     string selectedPlayer = lbAllPlayers.SelectedItem.ToString();
                     string imagePath = GetPlayerImagePath(selectedPlayer);
-                    Image playerImage = Image.FromFile(openFileDialog.FileName);
 
-                    // Save the image to disk
-                    playerImage.Save(imagePath);
+                    try
+                    {
+                        using (Image playerImage = Image.FromFile(openFileDialog.FileName))
+                        {
+                            playerImage.Save(imagePath);
 
-                    // Store the image in the dictionary and display it
-                    playerImages[selectedPlayer] = playerImage;
-                    pbPlayer1.Image = playerImage;
-                    pbPlayer1.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pbPlayer1.Visible = true;
+                            if (playerImages.ContainsKey(selectedPlayer))
+                            {
+                                playerImages[selectedPlayer].Dispose(); // Dispose of the old image to free resources
+                                playerImages[selectedPlayer] = new Bitmap(imagePath);
+                            }
+                            else
+                            {
+                                playerImages[selectedPlayer] = new Bitmap(imagePath);
+                            }
+
+                            pbPlayer1.Image = playerImages[selectedPlayer];
+                            pbPlayer1.SizeMode = PictureBoxSizeMode.StretchImage;
+                            pbPlayer1.Visible = true;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error uploading image: {ex.Message}");
+                    }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Please select a player first.");
             }
         }
 
@@ -162,8 +196,7 @@ namespace WFapp.UserControls
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-
-            RangListsControl rangListsControl = new(_initialForm);
+            RangListsControl rangListsControl = new RangListsControl(_initialForm);
 
             if (Parent != null)
             {
@@ -173,7 +206,6 @@ namespace WFapp.UserControls
                 rangListsControl.BringToFront();
                 rangListsControl.GetPnlRangList().Visible = true;
             }
-
         }
     }
 }
