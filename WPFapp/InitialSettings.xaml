@@ -1,0 +1,75 @@
+﻿<Window x:Class="WPFapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFapp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="600" MinWidth="600" MinHeight="500">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Other UI Controls (Gender Selection, Language Selection, Championship Selection, Navigation Buttons) -->
+        <!-- Gender Selection -->
+        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="0,10,0,10">
+            <Label Name="lblGender" Content="Select Gender:" HorizontalAlignment="Center" FontSize="16"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="btnMale" Content="Male" Margin="5" Click="btnMale_Click"
+                        MinWidth="100" MinHeight="30" 
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Button Name="btnFemale" Content="Female" Margin="5" Click="btnFemale_Click"
+                        MinWidth="100" MinHeight="30"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Language Selection -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="0,10,0,10">
+            <Label Name="lblLanguage" Content="Select Language:" HorizontalAlignment="Center" FontSize="16"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="btnEnglish" Content="English" Margin="5" Click="btnEnglish_Click"
+                        MinWidth="100" MinHeight="30"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Button Name="btnCroatian" Content="Croatian" Margin="5" Click="btnCroatian_Click"
+                        MinWidth="100" MinHeight="30"
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Championship Selection -->
+        <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="0,10,0,10">
+            <Label Name="lblNationalTeam" Content="Select Championship:" HorizontalAlignment="Center" FontSize="16"/>
+            <ComboBox Name="cbChampionship" Margin="5" SelectionChanged="cbChampionship_SelectedIndexChanged" 
+                      MinWidth="150" MaxWidth="400" MinHeight="30"
+                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </StackPanel>
+
+        <!-- Navigation Buttons -->
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,10">
+            <Button Name="btnBack" Content="Back" Margin="5" Click="btnBack_Click" IsEnabled="False" 
+                    MinWidth="100" MinHeight="30"
+                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button Name="btnNext" Content="Next" Margin="5" Click="btnNext_Click"
+                    MinWidth="100" MinHeight="30"
+                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button Name="btnExit" Content="Exit" Margin="5" Click="btnCancel_Click"
+                    MinWidth="100" MinHeight="30"
+                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </StackPanel>
+
+        <!-- Error Message Label -->
+        <Label Grid.Row="4" Name="lblErrMsg" Foreground="Red" Margin="0,20,0,0"
+               HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+    </Grid>
+</Window>

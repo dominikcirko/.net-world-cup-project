@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "C86a+GPMYNwJ2dMTb5v4Z8KiMcau5V8Z2VK/O7wffTVXM+Pu0VC7o1cnTkznA5yLsvy91hPW3CeGPCr4OY5xLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\domin\\source\\repos\\dotNET-Project\\WPFapp\\WPFapp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\domin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\domin\\.nuget\\packages\\system.text.json\\8.0.3\\system.text.json.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

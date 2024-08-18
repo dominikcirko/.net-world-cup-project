@@ -53,7 +53,7 @@ namespace WFapp.UserControls
             else
             {
                 MessageBox.Show("Default image file not found. Please check the path.");
-                defaultPlayerImage = new Bitmap(160, 105); // Placeholder empty image
+                defaultPlayerImage = new Bitmap(160, 105); 
             }
 
             pbPlayer1.Image = defaultPlayerImage;
@@ -92,7 +92,6 @@ namespace WFapp.UserControls
                 }
                 else
                 {
-                    // Show default image if no specific image exists
                     pbPlayer1.Image = defaultPlayerImage;
                 }
 
@@ -125,7 +124,7 @@ namespace WFapp.UserControls
 
                             if (playerImages.ContainsKey(selectedPlayer))
                             {
-                                playerImages[selectedPlayer].Dispose(); // Dispose of the old image to free resources
+                                playerImages[selectedPlayer].Dispose();
                                 playerImages[selectedPlayer] = new Bitmap(imagePath);
                             }
                             else

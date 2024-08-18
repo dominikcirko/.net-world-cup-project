@@ -56,7 +56,7 @@ namespace DataLayer.Utils.Implementation
             return "";
 
         }
-        public static bool FileReaderChecker(string txtFileLine1, string txtFileLine2, ref string contains)
+        private static bool FileReaderChecker(string txtFileLine1, string txtFileLine2, ref string contains)
         {
             object fileLock = new();
             string relativePath = "info.txt";

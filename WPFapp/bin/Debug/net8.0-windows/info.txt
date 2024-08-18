@@ -1,0 +1,3 @@
+Championship: male
+Language: English
+National team: Germany (GER)
