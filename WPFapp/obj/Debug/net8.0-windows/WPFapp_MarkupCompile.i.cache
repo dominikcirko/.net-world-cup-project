@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\App.xaml
-2-361217081
+4-2035860820
 
-101059275929
+12-578614783
 208103712237
-InitialSettings.xaml;SettingsWindow.xaml;
+InitialSettings.xaml;NationalTeamsWindow.xaml;SettingsWindow.xaml;TeamDetailsWindow.xaml;
 
-False
+True
 

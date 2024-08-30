@@ -1,4 +1,5 @@
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\WPFapp.exe
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\WPFapp.dll.config
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\WPFapp.deps.json
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\WPFapp.runtimeconfig.json
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\WPFapp.dll
@@ -8,9 +9,17 @@ C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\Newto
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\DataLayer.dll
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\DataLayer.pdb
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\WPFapp.csproj.AssemblyReference.cache
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\SettingsWindow.baml
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\InitialSettings.g.cs
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\NationalTeamsWindow.g.cs
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\SettingsWindow.g.cs
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\TeamDetailsWindow.g.cs
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\WPFapp_MarkupCompile.cache
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\WPFapp_MarkupCompile.lref
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\InitialSettings.baml
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\NationalTeamsWindow.baml
+C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\TeamDetailsWindow.baml
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\WPFapp.g.resources
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\WPFapp.Resources.resources
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\WPFapp.Resources.en.resources
@@ -27,8 +36,3 @@ C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\refin
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\WPFapp.pdb
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\WPFapp.genruntimeconfig.cache
 C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\ref\WPFapp.dll
-C:\Users\domin\source\repos\dotNET-Project\WPFapp\bin\Debug\net8.0-windows\WPFapp.dll.config
-C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\SettingsWindow.baml
-C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\SettingsWindow.g.cs
-C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\InitialSettings.g.cs
-C:\Users\domin\source\repos\dotNET-Project\WPFapp\obj\Debug\net8.0-windows\InitialSettings.baml

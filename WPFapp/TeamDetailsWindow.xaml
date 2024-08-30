@@ -1,0 +1,35 @@
+﻿<Window x:Class="WPFapp.TeamDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Team Details" Height="700" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <Label Content="Team Name:" FontWeight="Bold"/>
+            <Label Name="lblTeamName" FontSize="14"/>
+
+            <Label Content="FIFA Code:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <Label Name="lblFifaCode" FontSize="14"/>
+
+            <Label Content="Games Played:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <Label Name="lblGamesPlayed" FontSize="14"/>
+
+            <Label Content="Wins:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <Label Name="lblWins" FontSize="14"/>
+
+            <Label Content="Losses:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <Label Name="lblLosses" FontSize="14"/>
+
+            <Label Content="Draws:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <Label Name="lblDraws" FontSize="14"/>
+
+            <Label Content="Goals Scored:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <Label Name="lblGoalsScored" FontSize="14"/>
+
+            <Label Content="Goals Conceived:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <Label Name="lblGoalsConceived" FontSize="14"/>
+
+            <Label Content="Goal Difference:" FontWeight="Bold" Margin="0,10,0,0"/>
+            <Label Name="lblGoalDifference" FontSize="14"/>
+        </StackPanel>
+    </Grid>
+</Window>

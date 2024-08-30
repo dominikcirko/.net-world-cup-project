@@ -44,7 +44,7 @@ namespace WFapp.UserControls
             pbPlayer1.Size = new System.Drawing.Size(160, 105);
             _playerPicturesUtils = playerPicturesUtils;
 
-            string defaultImagePath = Path.Combine(@"..\..\..\..\DataLayer\images\", "player3.png");
+            string defaultImagePath = Path.Combine(Constants.IMAGES_PATH, "player3.png");
 
             if (File.Exists(defaultImagePath))
             {
@@ -69,7 +69,7 @@ namespace WFapp.UserControls
 
         private string GetPlayerImagePath(string playerName)
         {
-            string relativePath = @"..\..\..\..\DataLayer\images";
+            string relativePath = Constants.IMAGES_PATH;
             string imagesFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
             return Path.Combine(imagesFolder, playerName + "Img.png");
         }
@@ -181,10 +181,12 @@ namespace WFapp.UserControls
 
         private async Task CheckChampionship()
         {
-            bool isTrueMalePlayers = File.ReadLines("info.txt")
+            string filePath = Constants.TXT_FILE_PATH;
+
+            bool isTrueMalePlayers = File.ReadLines(filePath)
                 .Any(line => line.Contains("Championship: male") || line.Contains("Prvenstvo: muško"));
 
-            bool isTrueFemalePlayers = File.ReadLines("info.txt")
+            bool isTrueFemalePlayers = File.ReadLines(filePath)
                 .Any(line => line.Contains("Championship: female") || line.Contains("Prvenstvo: žensko"));
 
             if (isTrueMalePlayers)

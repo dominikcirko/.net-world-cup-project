@@ -16,11 +16,11 @@ namespace DataLayer.Utils.Implementation
 
         public void FileWriter(ComboBox comboBox, Label label = null)
         {
-            string relativePath = "info.txt";
-            using (StreamWriter sw = new(relativePath, true))
+            string filePath = Constants.Constants.TXT_FILE_PATH;
+            using (StreamWriter sw = new(filePath, true))
             {
                 string culture = CultureInfo.CurrentCulture.ToString();
-                if (File.Exists(relativePath))
+                if (File.Exists(filePath))
                 {
                     _genderLanguageUtils.LanguageHelper(sw,
                         culture,
@@ -59,14 +59,14 @@ namespace DataLayer.Utils.Implementation
         private static bool FileReaderChecker(string txtFileLine1, string txtFileLine2, ref string contains)
         {
             object fileLock = new();
-            string relativePath = "info.txt";
+            string filePath = Constants.Constants.TXT_FILE_PATH;
             lock (fileLock)
             {
-                using (StreamReader sw = new(relativePath))
+                using (StreamReader sw = new(filePath))
                 {
-                    if (File.Exists(relativePath))
+                    if (File.Exists(filePath))
                     {
-                        var linesRead = File.ReadLines(relativePath);
+                        var linesRead = File.ReadLines(filePath);
 
                         foreach (var line in linesRead)
                         {

@@ -30,10 +30,12 @@ namespace WFapp.UserControls
 
         private async Task CheckChampionship()
         {
-            bool isTrueMalePlayers = File.ReadLines("info.txt")
+            string filePath = Constants.TXT_FILE_PATH;
+
+            bool isTrueMalePlayers = File.ReadLines(filePath)
                 .Any(line => line.Contains("Championship: male") || line.Contains("Prvenstvo: muško"));
 
-            bool isTrueFemalePlayers = File.ReadLines("info.txt")
+            bool isTrueFemalePlayers = File.ReadLines(filePath)
                 .Any(line => line.Contains("Championship: female") || line.Contains("Prvenstvo: žensko"));
 
             if (isTrueMalePlayers)
@@ -59,7 +61,7 @@ namespace WFapp.UserControls
             }
         }
 
-        public void DisplayPlayerRankings(List<MatchData> matches)
+        private void DisplayPlayerRankings(List<MatchData> matches)
         {
             var playerStats = new Dictionary<string, (int Goals, int YellowCards, int Appearances)>();
 
@@ -182,7 +184,7 @@ namespace WFapp.UserControls
             }
         }
 
-        public void DisplayMatchInfo(List<MatchData> matches)
+        private void DisplayMatchInfo(List<MatchData> matches)
         {
             string country = _initialForm.GetCbChampionship().SelectedItem.ToString();
             string countrySplit = country.Split()[0];

@@ -12,9 +12,11 @@ namespace DataLayer.Constants
         public static string WORLD_CUP_WOMEN= "https://worldcup-vua.nullbit.hr/women/teams/results";
         public static string MATCH_INFO_MEN= "https://worldcup-vua.nullbit.hr/men/matches";
         public static string MATCH_INFO_WOMEN= "https://worldcup-vua.nullbit.hr/women/matches";
-        public static string TXT_FILE_PATH = "info.txt";
-        public static string FAV_PLAYER_NAMES = "names.txt";
-        public static string PARSED_FAV_PLAYER_NAMES = "parsedNames.txt";
+        public static string TXT_FILE_PATH = @"..\..\..\..\DataLayer\Resources\Files\info.txt";
+        public static string FAV_PLAYER_NAMES = @"..\..\..\..\DataLayer\Resources\Files\names.txt";
+        public static string PARSED_FAV_PLAYER_NAMES = @"..\..\..\..\DataLayer\Resources\Files\parsedNames.txt";
+        public static string IMAGES_PATH = @"..\..\..\..\DataLayer\Resources\images";
+
 
     }
 }

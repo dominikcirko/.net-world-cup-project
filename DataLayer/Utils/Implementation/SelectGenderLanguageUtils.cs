@@ -16,15 +16,15 @@ namespace DataLayer.Utils.Implementation
 
         public string FileReader()
         {
-            string relativePath = "info.txt";
+            string filePath = Constants.Constants.TXT_FILE_PATH;
 
             lock (fileLock)
             {
-                using (StreamReader sw = new(relativePath))
+                using (StreamReader sw = new(filePath))
                 {
-                    if (File.Exists(relativePath))
+                    if (File.Exists(filePath))
                     {
-                        var linesRead = File.ReadLines(relativePath);
+                        var linesRead = File.ReadLines(filePath);
 
                         foreach (var line in linesRead)
                         {
@@ -42,12 +42,12 @@ namespace DataLayer.Utils.Implementation
         {
             string culture = CultureInfo.CurrentCulture.ToString();
 
-            string relativePath = "info.txt";
+            string filePath = Constants.Constants.TXT_FILE_PATH;
             lock (fileLock)
             {
-                using (StreamWriter sw = new(relativePath))
+                using (StreamWriter sw = new(filePath))
                 {
-                    if (File.Exists(relativePath))
+                    if (File.Exists(filePath))
                     {
 
                         switch (SelectedGenderItem)

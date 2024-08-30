@@ -36,11 +36,12 @@ namespace WFapp.UserControls
         }
         private async Task CheckChampionship()
         {
+            string filePath = Constants.TXT_FILE_PATH;
 
-            bool isTrueMalePlayers = File.ReadLines("info.txt")
+            bool isTrueMalePlayers = File.ReadLines(filePath)
                 .Any(line => line.Contains("Championship: male") || line.Contains("Prvenstvo: muško"));
 
-            bool isTrueFemalePlayers = File.ReadLines("info.txt")
+            bool isTrueFemalePlayers = File.ReadLines(filePath)
                 .Any(line => line.Contains("Championship: female") || line.Contains("Prvenstvo: žensko"));
 
             if (isTrueMalePlayers)

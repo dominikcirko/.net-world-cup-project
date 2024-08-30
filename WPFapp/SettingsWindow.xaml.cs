@@ -20,9 +20,8 @@ namespace WPFapp
         {
             string selectedResolution = GetSelectedResolution();
 
-            // Save the resolution setting
             WpfAppSettings.Default.Resolution = selectedResolution;
-            WpfAppSettings.Default.Save(); // Persist the settings
+            WpfAppSettings.Default.Save(); 
 
             ApplyResolution(selectedResolution);
             this.Close();
@@ -39,12 +38,12 @@ namespace WPFapp
             if (rbDefault.IsChecked == true)
                 return "Fullscreen";
 
-            return "1280x720"; // Default resolution
+            return "1280x720";
         }
 
         private void ApplyResolution(string resolution)
         {
-            MainWindow mainWindow = new(_genderLanguageUtils, _championshipUtils, _nationalTeamUtils);
+            InitialSettings mainWindow = new(_genderLanguageUtils, _championshipUtils, _nationalTeamUtils);
             switch (resolution)
             {
                 case "1024x768":
